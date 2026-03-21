@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>AGAIN STUDIO</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{margin:0;padding:0;box-sizing:border-box;font-family:Poppins;}
+
+body{
+background:#000;
+color:white;
+}
+
+/* HEADER */
+
+header{
+position:relative;
+top:0;
+width:100%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 8%;
+background:6a0dad;
+z-index:999;
+}
+
+nav a{
+color:white;
+margin-left:20px;
+text-decoration:none;
+font-weight:500;
+}
+
+/* HERO */
+
+.hero{
+text-align:center;
+padding-top:120px;
+padding-bottom:80px;
+}
+
+.hero img{
+width:300px;
+max-width:90%;
+}
+
+.hero p{
+margin-top:20px;
+font-size:18px;
+color:#ccc;
+}
+
+/* SERVICES */
+
+.services{
+padding:80px 8%;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.card{
+background:linear-gradient(135deg,#a100ff,#ff003c);
+padding:40px;
+border-radius:10px;
+cursor:pointer;
+transition:.4s;
+text-align:center;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+/* PORTFOLIO */
+
+.titulo-portfolio{
+text-align: center;
+font-size: 40px;
+font-weight: bold;
+color: #ffffff;
+margin-top: 60px;
+margin-bottom: 40px;
+letter-spacing: 3px;
+}
+   
+   
+.photo{
+position:relative;
+}
+
+.photo img{
+width:100%;
+border-radius:8px;
+}
+
+.like{
+position:absolute;
+bottom:10px;
+right:10px;
+background:black;
+padding:5px 10px;
+border-radius:20px;
+cursor:pointer;
+}
+
+/* VIDEO */
+
+.video{
+padding:80px 8%;
+text-align:center;
+}
+
+.video video{
+width:90%;
+border-radius:10px;
+}
+
+  /* VIDEO */
+
+.video{
+padding:80px 8%;
+text-align:center;
+}
+
+.video video{
+width:90%;
+border-radius:10px;
+} 
+   
+/* FORM */
+
+.leads{
+padding:80px 8%;
+text-align:center;
+}
+
+form{
+max-width:400px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+input{
+padding:12px;
+border:none;
+border-radius:5px;
+}
+
+button{
+padding:12px;
+border:none;
+background:#ff003c;
+color:white;
+font-weight:600;
+cursor:pointer;
+}
+
+/* POPUP */
+
+.popup{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.9);
+display:none;
+justify-content:center;
+align-items:center;
+}
+
+.popup-content{
+background:#111;
+padding:30px;
+border-radius:10px;
+}
+
+
+/* FOOTER */
+
+footer{
+background:#111;
+padding:40px;
+text-align:center;
+margin-top:50px;
+}
+
+.social a{
+color:white;
+margin:10px;
+text-decoration:none;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+   
+  
+<div style="background-color:#red; color:white; padding:12px; text-align:center; font-size:17px; font-weight:bold;">
+📞 +244 946 806 912| ✉️ againstudio7@email.com | 📍 Luanda - Angola |
+   <p>📸 Fotografia • 🎬 Audiovisual •📊 Marketing Digital</p>
+</div>
+
+<!-- Conteúdo do seu site começa aqui -->
+</div>
+   
+</header>
+
+<section class="hero">
+
+<img src="foto15.jpg" alt="Logo AGAIN STUDIO">
+   
+
+<div style="font-family:'sans-serif; text-align:center; padding:40px; max-width:900px; margin:auto; font-size:18px; line-height:1.6; color:#333;">
+Na AGAIN STUDIO transformamos ideias em imagens que inspiram. 
+Somos especialistas em <strong>Fotografia, Audiovisual e Marketing Digital</strong>, criando conteúdos profissionais que valorizam a sua marca, o seu evento e a sua história.
+</div>
+
+</section>
+
+<section id="servicos" class="services">
+
+<div class="card" onclick="openService('foto')">Fotografia</div>
+
+<div class="card" onclick="openService('video')">Audiovisual</div>
+
+<div class="card" onclick="openService('marketing')">Marketing Digital</div>
+
+</section>
+
+<div class="titulo-portfolio">
+PORTFÓLIO
+</div>
+
+<div class="photo">
+<img src="foto2.jpg">
+<div class="like" onclick="like(this)">❤️ 0</div>
+</div>
+
+<div class="photo">
+<img src="foto3.jpg">
+<div class="like" onclick="like(this)">❤️ 0</div>
+</div>
+   
+   
+   
+   <div class="photo">
+<img src="foto5.jpg">
+<div class="like" onclick="like(this)">❤️ 0</div>
+</div>
+   
+   <div class="photo">
+<img src="foto8.jpg">
+<div class="like" onclick="like(this)">❤️ 0</div>
+</div>
+   
+   <div class="photo">
+<img src="foto9.jpg">
+<div class="like" onclick="like(this)">❤️ 0</div>
+</div>
+   
+   
+   <div class="photo">
+<img src="foto10.jpg">
+<div class="like" onclick="like(this)">❤️ 0</div>
+</div>
+   
+   <div class="photo">
+<img src="foto11.jpg">
+<div class="like" onclick="like(this)">❤️ 0</div>
+</div>
+   
+   <div class="photo">
+<img src="foto12.jpg">
+<div class="like" onclick="like(this)">❤️ 0</div>
+</div>
+   
+   <div class="photo">
+<img src="foto13.jpg">
+<div class="like" onclick="like(this)">❤️ 0</div>
+</div>
+   
+   <div class="photo">
+<img src="foto14.jpg">
+<div class="like" onclick="like(this)">❤️ 0</div>
+</div>
+   
+   
+   <div class="photo">
+<img src="foto6.jpg">
+<div class="like" onclick="like(this)">❤️ 0</div>
+</div>
+   
+   <div class="photo">
+<img src="foto7.jpg">
+<div class="like" onclick="like(this)">❤️ 0</div>
+</div>
+
+<div class="photo">
+<img src="foto4.jpg">
+<div class="like" onclick="like(this)">❤️ 0</div>
+</div>
+   
+   <div class="photo">
+<img src="foto16.jpg">
+<div class="like" onclick="like(this)">❤️ 0</div>
+</div>
+   
+    <div class="photo">
+<img src="foto17.jpg">
+<div class="like" onclick="like(this)">❤️ 0</div>
+</div>  
+   
+</section>
+
+<section class="video">
+
+<h2>Produção Audiovisual</h2>
+
+<video width="600" controls
+ poster="capa1.jpg">
+  <source src="videos/video2.mp4" type="video/mp4">
+</video>
+   
+ <video width="600" controls
+   poster="capa1.jpg">
+  <source src="videos/video3.mp4" type="video/mp4">
+</video>
+   
+
+</section>
+
+<section class="leads" id="contacto">
+
+<h2>Reserve sua agenda</h2>
+
+<form id="leadForm">
+
+<input type="text" id="nome" placeholder="Nome" required>
+<input type="tel" id="telefone" placeholder="Telefone" required>
+<input type="email" id="email" placeholder="Email" required>
+
+<button type="submit">Enviar</button>
+
+</form>
+
+</section>
+
+<footer>
+
+<p>© 2026 AGAIN STUDIO</p>
+   <p>©Todos os direitos reservados</p>
+
+   <p>CEO:
+<a href="https://www.facebook.com/ariel.son.18/" style="color:white;">Arielson Dac</a>
+</p>
+
+<a href="https://facebook.com/AgainStudio" target="_blank">
+
+<!-- Redes Sociais AGAIN STUDIO -->
+   
+   
+<div style="gap:5px;">
+ 
+
+<a href="https://www.instagram.com/againstudio_07/" target="_blank">
+   
+<img src="imagens/instagram.png" width="35" style="border-radius:20%;">
+</a>
+
+<a href="https://youtube.com/@againstudio-s7b?si=93Sur8axHxMEh7do" target="_blank">
+   
+<img src="imagens/youtube.png" width="35" style="border-radius:20%;">
+</a>
+
+<a href="https://www.facebook.com/profile.php?id=100066517930833&sk=photos" target="_blank">
+   
+<img src="imagens/facebook.png" width="35" style="border-radius:20%;">
+</a>
+
+<a href="https://www.tiktok.com/@again.studio62?is_from_webapp=1&sender_device=pc" target="_blank">
+<img src="imagens/tiktok.png" width="35" style="border-radius:20%;">
+</a>
+   
+  <div style="position:fixed; top:20px; right:20px; z-index:1000;">
+  <a href="https://wa.me/244946806912" target="_blank">
+    <img src="imagens/whatsapp.png" alt="WhatsApp"
+    style="width:60px; height:60px; border-radius:50%; box-shadow:0 4px 10px rgba(0,0,0,0.3);">
+  </a>
+</div> 
+   
+</div>
+   
+<style>
+.whatsapp-float{
+position: fixed;
+bottom: 20px;
+right: 20px;
+z-index: 1000;
+}
+</style>
+
+
+</a>
+
+</div>
+</div>
+
+</footer>
+
+<a class="whatsapp" href="https://wa.me/244946806912"></a>
+
+<div class="popup" id="popup">
+<div class="popup-content" id="popupContent"></div>
+</div>
+
+<script>
+
+/* POPUP SERVIÇOS */
+
+function openService(type){
+
+const popup=document.getElementById("popup")
+const content=document.getElementById("popupContent")
+
+if(type=="foto"){
+
+content.innerHTML=`
+<h2>Fotografia</h2>
+<p>Casamento</p>
+<p>Pacote Mini-100.000</p>
+<p>Pacote Max-140.000</p>
+<p>Pacote Super-200.000</p>
+<p>Pacote Premium-300.000</p>
+   
+   
+<a href="https://wa.me/244946806912?text=Gostaria de negociar o pacote de casamento">Agendar Seu Evento</a>
+<br>Pedido<br>
+ <p>Pacote Mini-60.000</p>
+  <p>Pacote Max-90.000</p>
+   <p>Pacote Premium-120.000</p>
+<a href="https://wa.me/244946806912?text=Gostaria de negociar o pacote de pedido">Agendar Seu Evento</a>
+`
+
+}
+   
+
+if(type=="video"){
+
+content.innerHTML=`
+<h2>Audiovisual</h2>
+<p>Video Clip</p>
+<p>Video Corporativo</p>
+<p>Gravação de podcast</p>
+<p>Filmagem evento</p>
+<a href="https://wa.me/244946806912?text=Gostaria de negociar o pacote video clip">Agendar Seu Evento</a>
+`
+
+}
+
+if(type=="marketing"){
+
+content.innerHTML=`
+<h2>Marketing Digital</h2>
+<p>Tráfego Pago</p>
+<p>Markenting De Conteúdo</p>
+<p>SEO(Otimização de busca)</p>
+<p>Gestão de Redes Sociais</p>
+<a href="https://wa.me/244946806912?text=Gostaria de negociar captação de leads">Pedir Orçamento</a>
+`
+
+}
+
+popup.style.display="flex"
+
+popup.onclick=function(){
+popup.style.display="none"
+}
+
+}
+
+/* LIKE FOTO */
+
+function like(el){
+
+if(el.classList.contains("liked")) return
+
+let n=parseInt(el.innerText.replace("❤️",""))
+
+n++
+
+el.innerText="❤️ "+n
+
+el.classList.add("liked")
+
+}
+
+/* FORM WHATSAPP */
+
+document.getElementById("leadForm").addEventListener("submit",function(e){
+
+e.preventDefault()
+
+let nome=document.getElementById("nome").value
+let tel=document.getElementById("telefone").value
+let email=document.getElementById("email").value
+
+let msg=`Olá meu nome é ${nome} telefone ${tel} email ${email}`
+
+let url=`https://wa.me/244943391599?text=${encodeURIComponent(msg)}`
+
+window.open(url)
+
+})
+
+</script>
+
+</body>
+</html>
